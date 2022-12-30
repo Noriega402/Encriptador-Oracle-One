@@ -4,6 +4,7 @@
 
 body{
 	background-color: #E5E5E5;
+	margin: 0;
 }
 
 h1{
@@ -12,7 +13,7 @@ h1{
 	font-family: 'Roboto', sans-serif;
 	font-size: 2.1rem;
 	margin: 0;
-	padding: 0;
+	padding: 10px 0 0 0;
 	margin-left: 10px;
 }
 
@@ -108,15 +109,15 @@ main .container-frm input:focus{
 	background-color: #ffffff;
 	max-width: 400px;
 	border-radius: 10px;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between; /*CUANDO HAY TEXTO*/
-/*	justify-content:*/  /* center; /*CUANDO NO HAY TEXTO*/
-	align-items: center;
-	text-align: center;
-	position: relative;
-	right: -80px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    right: -60px;
+    /* border: 1px 
 /*	border: 1px solid red;*/
 }
 
@@ -125,7 +126,7 @@ main .container-frm input:focus{
 	font-size: 28px;
 }
 .container-respuesta .vacio p:last-child{
-	font-weight: 100;
+	font-weight: 200;
 	color: #0A3871;
 	font-size: 16px;
 }
@@ -143,6 +144,7 @@ textarea{
 	color: #495057;
 	margin: 16px;
 	max-width: 90%;
+	display: none;
 }
 
 textarea:focus{
@@ -156,4 +158,20 @@ textarea:focus{
 	font-size: 16px;
 	font-family: 'Inter',sans-serif;
 	margin-bottom: 10px;
+	display: none; 
+}
+
+footer{
+	padding: 40px;
+	margin: 50px 0 0 0;
+	background-color: #0A3871;
+	width: 100%;
+	color: #ffffff;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+
+footer p:first-child{
+	font-weight: 900;
+	font-size: 18px;
 }
