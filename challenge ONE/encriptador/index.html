@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<title>Encriptador Challenge Oracle ONE</title>
+</head>
+<body>
+	<header>
+		<h1>Encriptador de mensajes</h1>
+	</header>
+	<main>
+		<div class="container-frm">
+			<input type="text" id="mensaje" placeholder="Ingrese el texto aqui">
+			<div>
+				<div>
+					<small class="danger">
+						<img src="./img/Vector.png" alt="">
+						Solo letras minúculas y sin acentos
+					</small>
+				</div>
+				<button type="button" id="encriptar" class="btn">Encriptar</button>
+				<button type="button" id="desencriptar" class="btn">Desencriptar</button>
+			</div>
+		</div>
+		<div class="container-respuesta">
+			<!-- <img src="./img/Muñeco.png" alt="" class="toy">
+			<div class="vacio">
+				<p>Ningún mensaje fue encontrado</p>
+				<p>Debes ingresar un texto que desees encriptar o desencriptar.</p>
+			</div> -->
+			<textarea name="" id="mostrar" cols="30"></textarea>
+			<button type="button" class="btn copy">Copiar</button>
+		</div>
+	</main>
+
+	<script src="./encryption.js"></script>
+</body>
+</html>

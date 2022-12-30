@@ -1,0 +1,136 @@
+header {
+    background-color: #bbbbc2;
+    padding: 20px 0;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top:110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 900;
+    font-family: 'Merriweather', serif;
+    font-size: 22px;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+nav a:hover{
+    color: #0000ff;
+    text-decoration: underline;
+    transition: all .2s linear;
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    transition: all .2s linear;
+}
+
+.productos li:hover{
+    border-color:#0000ff;
+    transform: scale(1.1);
+    transition: all .2s linear;
+}
+
+.productos li:active{
+    border-color:#088c19;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:10px;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding:40px;
+}
+
+.copyright{
+    color:#FFFFFF;
+    font-size: 13px;
+    margin:20px;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form label,
+.input-padron,
+form textarea{
+    display: block;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label{
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron,
+form textarea{
+    margin: 0 0 20px;
+    padding: 10px 20px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+form div p{
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.checkbox{
+    margin:20px 0;
+}

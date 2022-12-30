@@ -1,0 +1,159 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #E5E5E5;
+}
+
+h1{
+	color: #0A3871;
+	font-weight: 900;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.1rem;
+	margin: 0;
+	padding: 0;
+	margin-left: 10px;
+}
+
+#mensaje::-webkit-input-placeholder { color: #0A3871; } 
+#mensaje:-moz-placeholder { /* Firefox 18- */ color: #0A3871; } 
+#mensaje::-moz-placeholder { /* Firefox 19+ */ color: #0A3871; } 
+#mensaje:-ms-input-placeholder { color: #0A3871; }
+
+main{
+	display: flex;
+	justify-content: space-evenly;
+	height: 560px;
+	padding: 20px 0px 20px 0px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+/*	border: 1px solid green;*/
+}
+
+main .container-frm{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+main .container-frm input{
+	padding: 10px 5px 10px 5px;
+	background-color: transparent;
+	border: none;
+	font-size: 1.5rem;
+	color: #0A3871;
+	margin: 20px 0 0 0;
+}
+.ocultar{
+	visibility: hidden;
+}
+.danger{
+	display: flex;
+	justify-content: start;
+	margin-bottom: 10px;
+	font-size: 12px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+}
+.danger img{
+	margin-right: 6px;
+}
+
+.toy{
+	width: 250px;
+	height: 250px;
+}
+
+/* QUITAR EL BORDE DE L INPUT ACTIVO */
+main .container-frm input:focus{
+	outline: none;
+}
+
+.btn{
+	padding: 24px;
+	gap: 8px;
+	width: 328px;
+	height: 67px;
+	border-radius: 24px;
+	border: none;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+.btn:hover{
+	cursor: pointer;
+}
+
+#encriptar{
+	background-color: #0A3871;
+	color: #ffffff;
+	font-family: 'Inter', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	border: 1px solid #D8DFE8;
+}
+
+#desencriptar{
+	background-color: #D8DFE8;
+	color: #0A3871;
+	font-family: 'Inter', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	border: 1px solid #0A3871;
+}
+
+.container-respuesta{
+	background-color: #ffffff;
+	max-width: 400px;
+	border-radius: 10px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; /*CUANDO HAY TEXTO*/
+/*	justify-content:*/  /* center; /*CUANDO NO HAY TEXTO*/
+	align-items: center;
+	text-align: center;
+	position: relative;
+	right: -80px;
+/*	border: 1px solid red;*/
+}
+
+.container-respuesta .vacio p:first-child{
+	font-weight: bold;
+	font-size: 28px;
+}
+.container-respuesta .vacio p:last-child{
+	font-weight: 100;
+	color: #0A3871;
+	font-size: 16px;
+}
+.vacio{
+	font-family: 'Inter', sans-serif;
+	color: #343A40;
+}
+
+textarea{
+	border: none;
+	height: 480px;
+	font-size: 24px;
+	line-height: 36px;
+	font-family: 'Inter', sans-serif;
+	color: #495057;
+	margin: 16px;
+	max-width: 90%;
+}
+
+textarea:focus{
+	outline: none;
+}
+
+.copy{
+	color: #0A3871;
+	border: 1px solid #0A3871;
+	background-color: white;
+	font-size: 16px;
+	font-family: 'Inter',sans-serif;
+	margin-bottom: 10px;
+}
