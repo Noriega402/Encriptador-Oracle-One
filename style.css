@@ -1,5 +1,6 @@
 *{
 	box-sizing: border-box;
+/*	border: 1px solid red;*/
 }
 
 body{
@@ -24,13 +25,16 @@ h1{
 
 main{
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	height: 560px;
 	padding: 20px 0px 20px 0px;
 	margin: 0;
 	padding: 0;
 	position: relative;
-/*	border: 1px solid green;*/
+}
+
+#mensaje{
+	font-family: 'Roboto', sans-serif;
 }
 
 main .container-frm{
@@ -39,7 +43,7 @@ main .container-frm{
 	justify-content: space-between;
 }
 
-main .container-frm input{
+main .container-frm #mensaje{
 	padding: 10px 5px 10px 5px;
 	background-color: transparent;
 	border: none;
@@ -68,7 +72,7 @@ main .container-frm input{
 }
 
 /* QUITAR EL BORDE DE L INPUT ACTIVO */
-main .container-frm input:focus{
+main .container-frm #mensaje:focus{
 	outline: none;
 }
 
@@ -107,18 +111,13 @@ main .container-frm input:focus{
 
 .container-respuesta{
 	background-color: #ffffff;
-	max-width: 400px;
+	height: auto;
 	border-radius: 10px;
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    position: relative;
-    right: -60px;
-    /* border: 1px 
-/*	border: 1px solid red;*/
 }
 
 .container-respuesta .vacio p:first-child{
@@ -133,10 +132,13 @@ main .container-frm input:focus{
 .vacio{
 	font-family: 'Inter', sans-serif;
 	color: #343A40;
+	padding: 20px;
+	margin: 20px;
 }
 
-textarea{
+#mostrar{
 	border: none;
+	width: 400px;
 	height: 480px;
 	font-size: 24px;
 	line-height: 36px;
@@ -147,7 +149,7 @@ textarea{
 	display: none;
 }
 
-textarea:focus{
+#mostrar:focus{
 	outline: none;
 }
 
@@ -169,9 +171,84 @@ footer{
 	color: #ffffff;
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
+	position: relative;
 }
 
 footer p:first-child{
 	font-weight: 900;
 	font-size: 18px;
+}
+
+@media (min-width: 1300px){
+	.container-respuesta{
+		right: -60px;
+	}
+}
+@media (max-width: 1150px){
+	.btn{
+		padding: 20px;
+		gap: 8px;
+		width: 300px;
+		height: 60px;
+		border-radius: 24px;
+	}
+}
+@media (max-width:1024px){
+	main .container-frm div{
+		display: flex;
+	    flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+	}
+	main .container-frm div button{
+		margin-bottom: 16px;
+	}
+}
+@media (max-width:768px){
+	main{
+		flex-direction: column;
+		display: block;
+		height: 900px;
+	}
+	.toy{
+		display: none;
+	}
+	#mostrar{
+		max-height: 400px;
+		font-size: 24px;
+		color: #495057;
+		width: 100%;
+	}
+	main .container-frm div{
+		margin: 0 auto;
+		display: block;
+	}
+	main .container-frm #mensaje{
+		margin-left: 10px;
+		max-width: 700px;
+		height: 300px;
+	}
+
+	.container-respuesta{
+		margin: 0 auto;
+		margin-top: 20px;
+		box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+		width: 95%;
+/*		height: 360px;*/
+	}
+
+	.vacio p:first-child{
+		font-weight: 900;
+		font-size: 25px !important;
+	}
+}
+
+@media (max-width: 640px){
+	main .container-frm div{
+		display: flex;
+		flex-direction: column;
+	}
+	main{
+		height: 1000px;
+	}
 }

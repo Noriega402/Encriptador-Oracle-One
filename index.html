@@ -13,7 +13,8 @@
 	</header>
 	<main>
 		<div class="container-frm">
-			<input type="text" id="mensaje" placeholder="Ingrese el texto aqui">
+			<!-- <input type="text" id="mensaje" placeholder="Ingrese el texto aqui"> -->
+			<textarea id="mensaje" placeholder="Ingrese el texto aqui" rows="14"></textarea>
 			<div>
 				<div>
 					<small class="danger">
@@ -21,12 +22,14 @@
 						Solo letras minúculas y sin acentos
 					</small>
 				</div>
-				<button type="button" id="encriptar" class="btn">Encriptar</button>
-				<button type="button" id="desencriptar" class="btn">Desencriptar</button>
+				<div>
+					<button type="button" id="encriptar" class="btn">Encriptar</button>
+					<button type="button" id="desencriptar" class="btn">Desencriptar</button>
+				</div>
 			</div>
 		</div>
 		<div class="container-respuesta">
-			<textarea name="" id="mostrar" cols="30"></textarea>
+			<textarea name="" id="mostrar"></textarea>
 			<img src="./img/Muñeco.png" alt="" class="toy" id="img">
 			<div class="vacio" id="vacio">
 				<p>Ningún mensaje fue encontrado</p>
